@@ -1,0 +1,211 @@
+/* Portfolio */
+.portfolioStocks-header {
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 24px;
+    color: #202124;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.portfolioStocks {
+    margin-top: 5px;
+    width: 100%;
+}
+.portfolioStock-outerDiv {
+    display: inline-block;
+    text-decoration: none;
+}
+.portfolioStock {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    background: white;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    white-space: nowrap;
+    width: 175px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    margin-bottom: 5px;
+}
+.portfolioStock:hover {
+    background: #f8f9fa;
+}
+.portfolioStock-arrowDiv {
+    display: flex;
+    height: 32px;
+    min-width: 32px;
+    overflow: hidden;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 32px;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+.portfolioStock-arrow {
+    height: 16px;
+    margin: auto;
+    color: inherit;
+}
+.portfolioStock-middle {
+    display: flex;
+    min-width: 64px;
+    -webkit-box-orient: vertical;
+    flex-direction: column;
+    letter-spacing: .4px;
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-right: 8px;
+    max-width: 120px;
+    text-align: right;
+}
+.portfolioStock-middleTitle {
+    color: #202124;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+.portfolioStock-middlePrice {
+    color: #3c4043;
+    height: 16px;
+    overflow: hidden;
+    display: block;
+    text-align: left;
+}
+.portfolioStock-right {
+    display: flex;
+    -webkit-box-orient: vertical;
+    flex-direction: column;
+    letter-spacing: 0.4px;
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: right;
+}
+.portfolioStock-rightPercent, .portfolioStock-rightChange {
+    min-width: unset;
+    font-weight: 500;
+    height: 16px;
+    overflow: hidden;
+    display: inline-block;
+    font-family: Roboto,Arial,sans-serif;
+    align-items: flex-end;
+    justify-content: flex-end;
+    white-space: nowrap;
+    text-align: right;
+}
+.portfolioStockList {
+    width: 100%;
+    display: inline-block;
+}
+.portfolioStockLeft {
+    display: inline-block;
+}
+.portfolioStockRight {
+    display: inline-block;
+}
+.positive {
+    color: #137333!important;
+    background-color: #e6f4ea!important;
+}
+.negative {
+    background: #fce8e6!important;
+    color: #c5221f!important;
+    transform: rotate(180deg);
+}
+.negativeNR {
+    background: #fce8e6!important;
+    color: #c5221f!important;
+}
+.positiveC {
+    color: #137333!important;
+}
+.negativeC {
+    color: #c5221f!important;
+}
+.stocks-graph-top {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    position: relative;
+}
+.stocks-graph-header {
+    margin-top: 15px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #3c4043;
+}
+.stocks-graph-title {
+    display: block;
+    letter-spacing: .4px;
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+.stocks-graph-price {
+    display: inline-block;
+    letter-spacing: .4px;
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 500;
+}
+.stocks-graph-percent, .stocks-graph-change {
+    display: inline-block;
+    letter-spacing: .00625em;
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 0 8px;
+    border-radius: 8px;
+}
+.stocks-graph-backBtnDiv {
+    position: absolute;
+    right: 17px;
+    margin-top: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #3c4043;
+}
+.stocks-graph-backBtn {
+    color: #5f6368;
+    border-radius: 8px;
+    height: 35px;
+    width: 35px;
+}
+.stocks-graph-backBtn:hover {
+    background-color: #f2f3f4;
+}
+.stocks-graph {
+    height: 185px;
+    width: calc(100% - 30px);
+    margin-left: 15px;
+}
+.show {
+    display: block!important;
+}
+
+@media (max-width: 550px) {
+    .portfolioStock-outerDiv:first-of-type {
+        display: inline-block!important;
+        visibility: visible!important;
+    }
+    .portfolioStock-outerDiv {
+        display: none!important;
+        visibility: hidden;
+    }
+    .portfolioStocks-header {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}

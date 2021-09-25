@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Google</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta name="description" content="Google"/>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="stylesheets/navbar.css">
+    <link rel="stylesheet" href="stylesheets/google.css">
+    <link rel="stylesheet" href="stylesheets/maincontainer.css">
+    <link rel="stylesheet" href="stylesheets/light.css">
+    <link rel="stylesheet" href="stylesheets/weather.css">
+    <link rel="stylesheet" href="stylesheets/portfolio.css">
+    <link rel="stylesheet" href="stylesheets/news.css">
+</head>
+
+<body>
+    <div class="landingDiv" id="home">
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <div class="navbar-innerDiv">
+                <a class="navbar-left-btn" href="http://192.168.1.57/admin"> </a>
+                <div class="navbar-right-outerDiv">
+                    <div class="navbar-right-innerDiv">
+                        <div class="navbar-right">
+                            <div>
+                                <div class="navbar-right-btnDivs">
+                                    <div class="navbar-right-btnDiv"><a class="navbar-right-btn" href="https://www.google.com">Home</a></div>
+                                    <div class="navbar-right-btnDiv"><a class="navbar-right-btn" href="https://mail.google.com/mail/?authuser=0">Gmail</a></div>
+                                </div>
+                            </div>
+                            <div class="navbar-right-moreDiv-outer">
+                                <div class="navbar-right-moreDiv-inner">
+                                    <div class="navbar-right-moreDiv">
+                                        <div class="navbar-right-moreDiv1">
+                                            <a class="navbar-right-moreBtnDiv" title="Apps" id="navbar-moreBtn">
+                                                <svg class="navbar-right-moreBtn" id="navbar-moreButton" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="navbar-moreContainer" class="navbar-moreContainerDiv">
+                                <div class="navbar-moreContainerElementDiv">
+                                    <a class="navbar-moreContainerElement">
+                                        <div class="navbar-moreContainerPicture" style="background-position: 0 -1794px;"></div>
+                                        <div class="navbar-moreContainerText">Search</div>
+                                    </a>
+                                    <a class="navbar-moreContainerElement" href="https://mail.google.com/mail/?authuser=0">
+                                        <div class="navbar-moreContainerPicture" style="background-position: 0 -2001px;"></div>
+                                        <div class="navbar-moreContainerText">Gmail</div>
+                                    </a>
+                                    <a class="navbar-moreContainerElement" href="https://drive.google.com/?authuser=0">
+                                        <div class="navbar-moreContainerPicture" style="background-position: 0 -2967px;"></div>
+                                        <div class="navbar-moreContainerText">Drive</div>
+                                    </a>
+                                </div>
+                                <div class="navbar-moreContainerElementDiv">
+                                    <a class="navbar-moreContainerElement" href="https://www.youtube.com/?authuser=0">
+                                        <div class="navbar-moreContainerPicture" style="background-position: 0 -2622px;"></div>
+                                        <div class="navbar-moreContainerText">Youtube</div>
+                                    </a>
+                                    <a class="navbar-moreContainerElement" href="https://photos.google.com/?authuser=0">
+                                        <div class="navbar-moreContainerPicture" style="background-position: 0 -2829px;"></div>
+                                        <div class="navbar-moreContainerText">Photos</div>
+                                    </a>
+                                    <a class="navbar-moreContainerElement" id="light">
+                                        <div class="navbar-moreContainerPicture" style="background-position: 0 -2898px;"></div>
+                                        <div class="navbar-moreContainerText">Light</div>
+                                    </a>
+                                </div>
+                                <div class="navbar-moreContainerElementDiv">
+                                    <a class="navbar-moreContainerElement" id="weather">
+                                        <div class="navbar-moreContainerPicture" style="background-position: 0 -3036px;"></div>
+                                        <div class="navbar-moreContainerText">Weather</div>
+                                    </a>
+                                    <a class="navbar-moreContainerElement" id="portfolio">
+                                        <div class="navbar-moreContainerPicture" style="background-position: 0 -344px;"></div>
+                                        <div class="navbar-moreContainerText">Finance</div>
+                                    </a>
+                                    <a class="navbar-moreContainerElement" id="news">
+                                        <div class="navbar-moreContainerPicture" style="background-position: 0 -1311px;"></div>
+                                        <div class="navbar-moreContainerText">News</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Google Logo -->
+        <div class="logo-outerDiv">
+            <div class="logo-innerDiv">
+                <img class="logo" alt="Google" height="92" src="images/googleLogo.png" width="272">
+            </div>
+        </div>
+
+        <!-- Google Search -->
+        <div class="bar-outerDiv" id="barOuterDiv">
+            <div class="bar">
+                <div class="bar-searchIcon-outerDiv">
+                    <div class="bar-searchIcon-div">
+                        <span class="bar-searchIcon"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></span>
+                    </div>
+                </div>
+                <div class="bar-searchBox-outerDiv">
+                    <div class="bar-searchBox-div"></div>
+                    <input type="text" class="bar-searchBox" id="barSearchBox" onclick="barSearchBoxActive()" onblur="barSearchBoxInactive()" maxlength="2048" name="q"  aria-expanded="false" aria-autocomplete="both" aria-haspopup="false" autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="" role="combobox" spellcheck="false" title="Search" value="" aria-label="Search">
+                </div>
+                <div class="bar-microphoneIcon-outerDiv">
+                    <div class="bar-microphoneIcon-div" title="Search by voice">
+                        <svg class="bar-microphoneIcon" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z" fill="#4285f4"></path>
+                            <path d="m11 18.08h2v3.92h-2z" fill="#34a853"></path>
+                            <path d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z" fill="#f4b400"></path>
+                            <path d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z" fill="#ea4335"></path>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Main Container -->
+        <div class="mainContainer-outerDiv">
+            <div class="mainContainer">
+                <div class="mainContainer-leftArrow" id="mainContainer-leftArw">
+                    <svg class="mainContainer-arrow" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                    </svg>
+                </div>
+                <div class="mainContainer-rightArrow" id="mainContainer-rightArw">
+                    <svg class="mainContainer-arrow" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </div>
+                <div class="mainContainer-innerDiv">
+                    <!-- Light -->
+                    <div class="lightDiv" id="lightC">
+                        <a class="mainContainer-title" title="Light">
+                            <span class="mainContainer-titleText">Light</span>
+                        </a>
+                        <div class="power-switch">
+                            <input type="checkbox" id="check" />
+                            <div class="power-switchButton">
+                                <svg class="power-off">
+                                    <use xlink:href="#powerline" class="power-switchLine" />
+                                    <use xlink:href="#powercircle" class="power-switchCircle" />
+                                </svg>
+                                <svg class="power-on">
+                                    <use xlink:href="#powerline" class="power-switchLine" />
+                                    <use xlink:href="#powercircle" class="power-switchCircle" />
+                                </svg>
+                            </div>
+                        </div>
+                        <svg style="display: none;">
+                            <symbol viewBox="0 0 150 150" id="powerline">
+                                <line x1="75" y1="34" x2="75" y2="58" />
+                            </symbol>
+                            <symbol viewBox="0 0 150 150" id="powercircle">
+                                <circle cx="75" cy="80" r="35" />
+                            </symbol>
+                        </svg>
+                    </div>
+
+                    <!-- Weather -->
+                    <div>
+                        <div class="weatherDiv" id="weatherC">
+                            <a class="mainContainer-title" title="Weather" href="https://www.google.com/search?q=weather">
+                                <span class="mainContainer-titleText">Weather</span>
+                            </a>
+                            <div class="weatherWidget">
+                                <a onclick="weatherClick('0')">
+                                    <div class="weatherWidget_topDiv">
+                                        <div class="weatherWidget_location">
+                                            <div class="weatherWidget_locationText">Athens</div>
+                                        </div>
+                                        <div class="weatherWidget_currIcon">
+                                            <img class="weatherWidget_currIconImg" src="images/WeatherIcons/sunny.png"/>
+                                        </div>
+                                        <div class="weatherWidget_topDiv_rightDiv">
+                                            <div class="weatherWidget_topDiv_rightInnerDiv">
+                                                <div class="weatherWidget_currTemp">--&deg;F</div>
+                                                <div class="weatherWidget_currDesc">-----</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="weatherWidget_bottomDiv">
+                                    <a onclick="weatherClick('0')">
+                                        <div class="weatherWidget_dayDiv">
+                                            <div class="weatherWidget_dayTextDiv">
+                                                <div class="weatherWidget_dayText">---</div>
+                                            </div>
+                                            <div class="weatherWidget_dayIcon">
+                                                <img class="weatherWidget_dayIconImg" src="images/WeatherIcons/sunny.png"/>
+                                            </div>
+                                            <div class="weatherWidget_dayTemps">
+                                                <div class="weatherWidget_dayTempsInnerDiv">
+                                                    <div class="weatherWidget_dayHigh">--&deg;F</div>
+                                                    <div class="weatherWidget_dayLow">--&deg;F</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a onclick="weatherClick('1')">
+                                        <div class="weatherWidget_dayDiv">
+                                            <div class="weatherWidget_dayTextDiv">
+                                                <div class="weatherWidget_dayText">---</div>
+                                            </div>
+                                            <div class="weatherWidget_dayIcon">
+                                                <img class="weatherWidget_dayIconImg" src="images/WeatherIcons/sunny.png" />
+                                            </div>
+                                            <div class="weatherWidget_dayTemps">
+                                                <div class="weatherWidget_dayTempsInnerDiv">
+                                                    <div class="weatherWidget_dayHigh">--&deg;F</div>
+                                                    <div class="weatherWidget_dayLow">--&deg;F</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a onclick="weatherClick('2')">
+                                        <div class="weatherWidget_dayDiv">
+                                            <div class="weatherWidget_dayTextDiv">
+                                                <div class="weatherWidget_dayText">---</div>
+                                            </div>
+                                            <div class="weatherWidget_dayIcon">
+                                                <img class="weatherWidget_dayIconImg" src="images/WeatherIcons/sunny.png" />
+                                            </div>
+                                            <div class="weatherWidget_dayTemps">
+                                                <div class="weatherWidget_dayTempsInnerDiv">
+                                                    <div class="weatherWidget_dayHigh">--&deg;F</div>
+                                                    <div class="weatherWidget_dayLow">--&deg;F</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a onclick="weatherClick('3')">
+                                        <div class="weatherWidget_dayDiv">
+                                            <div class="weatherWidget_dayTextDiv">
+                                                <div class="weatherWidget_dayText">---</div>
+                                            </div>
+                                            <div class="weatherWidget_dayIcon">
+                                                <img class="weatherWidget_dayIconImg" src="images/WeatherIcons/sunny.png" />
+                                            </div>
+                                            <div class="weatherWidget_dayTemps">
+                                                <div class="weatherWidget_dayTempsInnerDiv">
+                                                    <div class="weatherWidget_dayHigh">--&deg;F</div>
+                                                    <div class="weatherWidget_dayLow">--&deg;F</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a onclick="weatherClick('4')">
+                                        <div class="weatherWidget_dayDiv">
+                                            <div class="weatherWidget_dayTextDiv">
+                                                <div class="weatherWidget_dayText">---</div>
+                                            </div>
+                                            <div class="weatherWidget_dayIcon">
+                                                <img class="weatherWidget_dayIconImg" src="images/WeatherIcons/sunny.png" />
+                                            </div>
+                                            <div class="weatherWidget_dayTemps">
+                                                <div class="weatherWidget_dayTempsInnerDiv">
+                                                    <div class="weatherWidget_dayHigh">--&deg;F</div>
+                                                    <div class="weatherWidget_dayLow">--&deg;F</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Weather Click Container -->
+                        <div class="weatherDiv" id="weatherC2">
+                            <div class="weatherCon2-topBar">
+                                <div class="weatherCon2-titleDiv">
+                                    <a href="https://www.google.com/search?q=weather">
+                                        <div class="weatherCon2-titleText">Today's Weather</div>
+                                    </a>
+                                </div>
+                                <div class="weatherCon2-backBtnDiv">
+                                    <svg class="weatherCon2-backBtn" onClick="weatherBackBtn()" width='53.7' height='53.7' viewBox='0 0 53.7 53.7'>
+                                        <circle cx="26.85" cy="26.85" r="20" stroke="#5f6368" stroke-width="1.5" fill="none" />
+                                        <path fill='#5f6368' stroke="#5f6368" stroke-width="0.5" d='M35.6 34.4L28 26.8l7.6-7.6c.2-.2.2-.5 0-.7l-.5-.5c-.2-.2-.5-.2-.7 0l-7.6 7.6-7.5-7.6c-.2-.2-.5-.2-.7 0l-.6.6c-.2.2-.2.5 0 .7l7.6 7.6-7.6 7.5c-.2.2-.2.5 0 .7l.5.5c.2.2.5.2.7 0l7.6-7.6 7.6 7.6c.2.2.5.2.7 0l.5-.5c.2-.2.2-.5 0-.7z' />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="weatherWidget2">
+                                <a>
+                                    <div class="weatherCon2-topDiv">
+                                        <div class="weatherCon2-currIcon">
+                                            <img class="weatherCon2-currIconImg" src="images/WeatherIcons/sunny.png" />
+                                        </div>
+                                        <div class="weatherCon2-topDiv-rightDiv">
+                                            <div class="weatherCon2-topDiv-rightInnerDiv">
+                                                <div class="weatherCon2-currDescTitle">-----</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="weatherCon2-bottomDiv">
+                                        <div class="weatherCon2-bottomCol">
+                                            <div class="weatherCon2-bottomRow">
+                                                <div class="weatherCon2-bottomRow-left">
+                                                    <svg class="weatherCon2-bottomRow-icon" viewBox="0 0 25 25">
+                                                        <path d="M10.333 15.48v.321c.971.357 1.667 1.322 1.667 2.456 0 1.438-1.12 2.604-2.5 2.604S7 19.695 7 18.257c0-1.134.696-2.099 1.667-2.456v-.322a2.084 2.084 0 0 1-1.25-1.91V5.583a2.083 2.083 0 1 1 4.166 0v7.986c0 .855-.514 1.589-1.25 1.91zM15.8 8.1a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6zm0-1.85a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path>
+                                                    </svg>
+                                                </div>
+                                                <div class="weatherCon2-bottomRow-left">
+                                                    <div class="weatherCon2-bottomRow-title">High / Lo</div>
+                                                </div>
+                                                <div class="weatherCon2-bottomRow-right">
+                                                    <div class="weatherCon2-bottomRow-text">--&deg; / --&deg;</div>
+                                                </div>
+                                            </div>
+                                            <div class="weatherCon2-bottomRow">
+                                                <div class="weatherCon2-bottomRow-left">
+                                                    <svg class="weatherCon2-bottomRow-icon" viewBox="0 0 25 25">
+                                                        <path fill-rule="evenodd" d="M11.743 17.912a4.182 4.182 0 0 1-2.928-1.182 3.972 3.972 0 0 1-.614-4.962.743.743 0 0 1 .646-.349c.234 0 .476.095.66.275l4.467 4.355c.385.376.39.998-.076 1.275a4.216 4.216 0 0 1-2.155.588M11.855 4c.316 0 .61.14.828.395.171.2.36.416.562.647 1.857 2.126 4.965 5.684 4.965 8.73 0 3.416-2.85 6.195-6.353 6.195-3.505 0-6.357-2.78-6.357-6.195 0-3.082 2.921-6.406 4.854-8.605.242-.275.47-.535.673-.772A1.08 1.08 0 0 1 11.855 4"></path>
+                                                    </svg>
+                                                </div>
+                                                <div class="weatherCon2-bottomRow-left">
+                                                    <div class="weatherCon2-bottomRow-title">Humidity</div>
+                                                </div>
+                                                <div class="weatherCon2-bottomRow-right">
+                                                    <div class="weatherCon2-bottomRow-text">--%</div>
+                                                </div>
+                                            </div>
+                                            <div class="weatherCon2-bottomRow">
+                                                <div class="weatherCon2-bottomRow-left">
+                                                    <svg class="weatherCon2-bottomRow-icon" viewBox="0 0 25 25">
+                                                        <path
+                                                            d="M8.462 18.293l-.29-.002c-.6-.004-1.043-.007-1.259-.007-1.119 0-1.182-1.015-.34-1.734l.196-.164.508-.425 1.543-1.292c1.014-.846 1.74-1.45 2.073-1.723.735-.601 1.305-.596 2.033.022.387.329.959.805 2.207 1.841a377.936 377.936 0 0 1 2.18 1.816c.796.67.742 1.66-.295 1.66h-2.382v1.77c0 .83-.393 1.223-1.258 1.223h-2.994c-.809 0-1.258-.42-1.258-1.207v-1.773l-.664-.005zm0-12.807l-.29.002c-.6.004-1.043.006-1.259.006-1.119 0-1.182 1.016-.34 1.734l.196.164.508.426 1.543 1.29a348.68 348.68 0 0 0 2.073 1.724c.735.601 1.305.596 2.033-.022.387-.328.959-.805 2.207-1.84a377.937 377.937 0 0 0 2.18-1.817c.796-.67.742-1.659-.295-1.659h-2.382v-1.77c0-.832-.393-1.224-1.258-1.224h-2.994c-.809 0-1.258.42-1.258 1.207V5.48l-.664.005z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                                <div class="weatherCon2-bottomRow-left">
+                                                    <div class="weatherCon2-bottomRow-title">Pressure</div>
+                                                </div>
+                                                <div class="weatherCon2-bottomRow-right">
+                                                    <div class="weatherCon2-bottomRow-text">--.--in</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="weatherCon2-bottomCol">
+                                            <div class="weatherCon2-bottomRow">
+                                                <div class="weatherCon2-bottomRow-left">
+                                                    <svg class="weatherCon2-bottomRow-icon" viewBox="0 0 25 25">
+                                                        <path d="M6 8.67h5.354c1.457 0 2.234-1.158 2.234-2.222S12.687 4.4 11.354 4.4c-.564 0-1.023.208-1.366.488M3 11.67h15.54c1.457 0 2.235-1.158 2.235-2.222S19.873 7.4 18.54 7.4c-.747 0-1.311.365-1.663.78M6 15.4h9.389c1.457 0 2.234 1.159 2.234 2.223 0 1.064-.901 2.048-2.234 2.048a2.153 2.153 0 0 1-1.63-.742" stroke-width="2" stroke="currentColor" stroke-linecap="round" fill="none"></path>
+                                                    </svg>
+                                                </div>
+                                                <div class="weatherCon2-bottomRow-left">
+                                                    <div class="weatherCon2-bottomRow-title">Wind</div>
+                                                </div>
+                                                <div class="weatherCon2-bottomRow-right">
+                                                    <svg class="weatherCon2-bottomRow-windIcon" style="transform:rotate(180deg) translateY(-4px);" viewBox="0 0 24 24">
+                                                        <path stroke="currentColor" fill="none" d="M18.467 4.482l-5.738 5.738a1.005 1.005 0 0 1-1.417 0L5.575 4.482l6.446 16.44 6.446-16.44z"></path>
+                                                    </svg>
+                                                    <div class="weatherCon2-bottomRow-text">--mph&deg;</div>
+                                                </div>
+                                            </div>
+                                            <div class="weatherCon2-bottomRow">
+                                                <div class="weatherCon2-bottomRow-left">
+                                                    <svg class="weatherCon2-bottomRow-icon" viewBox="0 0 24 24">
+                                                        <path d="M10.862 6.052v5.329a.75.75 0 0 0 1.5 0V6.036l1.772 1.534a.75.75 0 0 0 .982-1.134l-3.003-2.601a.75.75 0 0 0-.982 0L8.128 6.436A.75.75 0 0 0 9.11 7.57l1.752-1.518zM21 19.128a.75.75 0 0 0 0-1.5H3.167a.75.75 0 1 0 0 1.5H21z"></path>
+                                                    </svg>
+                                                </div>
+                                                <div class="weatherCon2-bottomRow-left">
+                                                    <div class="weatherCon2-bottomRow-title">Sunrise</div>
+                                                </div>
+                                                <div class="weatherCon2-bottomRow-right">
+                                                    <div class="weatherCon2-bottomRow-text">--:--am</div>
+                                                </div>
+                                            </div>
+                                            <div class="weatherCon2-bottomRow">
+                                                <div class="weatherCon2-bottomRow-left">
+                                                    <svg class="weatherCon2-bottomRow-icon" viewBox="0 0 24 24">
+                                                        <path d="M10.862 9.853L9.044 8.278a.75.75 0 1 0-.982 1.134l3.003 2.602a.75.75 0 0 0 .982 0l3.004-2.602a.75.75 0 0 0-.983-1.134l-1.706 1.478V4a.75.75 0 0 0-1.5 0v5.853zM21 19.075a.75.75 0 1 0 0-1.5H3.167a.75.75 0 1 0 0 1.5H21z"></path>
+                                                    </svg>
+                                                </div>
+                                                <div class="weatherCon2-bottomRow-left">
+                                                    <div class="weatherCon2-bottomRow-title">Sunset</div>
+                                                </div>
+                                                <div class="weatherCon2-bottomRow-right">
+                                                    <div class="weatherCon2-bottomRow-text">--:--pm</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Portfolio -->
+                    <div>
+                        <div class="portfolioDiv" id="portfolioC">
+                            <a class="mainContainer-title" title="Finance" href="https://www.google.com/finance">
+                                <span class="mainContainer-titleText">Finance</span>
+                            </a>
+                            <div class="portfolioStocksDiv">
+                                <!-- Markets -->
+                                <div class="portfolioStocks">
+                                    <div class="portfolioStocks-header">Markets</div>
+                                    <a class="portfolioStock-outerDiv" href="https://www.google.com/finance/quote/.DJI:INDEXDJX">
+                                        <div class="portfolioStock" id=".DJI:INDEXDJX">
+                                            <div class="portfolioStock-arrowDiv positive">
+                                                <div class="portfolioStock-arrow">
+                                                    <svg focusable="false" width="16" height="16"
+                                                        style="fill:currentColor;transform:rotate(0deg);" viewBox="0 0 24 24">
+                                                        <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="portfolioStock-middle">
+                                                <div class="portfolioStock-middleTitle">Dow Jones</div>
+                                                <div class="portfolioStock-middlePrice">0.00</div>
+                                            </div>
+                                            <div class="portfolioStock-right positiveC">
+                                                <div class="portfolioStock-rightPercent">+0.00%</div>
+                                                <div class="portfolioStock-rightChange">+0.00</div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a class="portfolioStock-outerDiv" href="https://www.google.com/finance/quote/.INX:INDEXSP">
+                                        <div class="portfolioStock" id=".INX:INDEXSP">
+                                            <div class="portfolioStock-arrowDiv positive">
+                                                <div class="portfolioStock-arrow">
+                                                    <svg focusable="false" width="16" height="16"
+                                                        style="fill:currentColor;transform:rotate(0deg);" viewBox="0 0 24 24">
+                                                        <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="portfolioStock-middle">
+                                                <div class="portfolioStock-middleTitle">S&P 500</div>
+                                                <div class="portfolioStock-middlePrice">0.00</div>
+                                            </div>
+                                            <div class="portfolioStock-right positiveC">
+                                                <div class="portfolioStock-rightPercent">+0.00%</div>
+                                                <div class="portfolioStock-rightChange">+0.00</div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a class="portfolioStock-outerDiv" href="https://www.google.com/finance/quote/.IXIC:INDEXNASDAQ">
+                                        <div class="portfolioStock" id=".IXIC:INDEXNASDAQ">
+                                            <div class="portfolioStock-arrowDiv positive">
+                                                <div class="portfolioStock-arrow">
+                                                    <svg focusable="false" width="16" height="16"
+                                                        style="fill:currentColor;transform:rotate(0deg);" viewBox="0 0 24 24">
+                                                        <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="portfolioStock-middle">
+                                                <div class="portfolioStock-middleTitle">Nasdaq</div>
+                                                <div class="portfolioStock-middlePrice">0.00</div>
+                                            </div>
+                                            <div class="portfolioStock-right positiveC">
+                                                <div class="portfolioStock-rightPercent">+0.00%</div>
+                                                <div class="portfolioStock-rightChange">+0.00</div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a class="portfolioStock-outerDiv" href="https://www.google.com/finance/quote/RUT:INDEXRUSSELL">
+                                        <div class="portfolioStock" id="RUT:INDEXRUSSELL">
+                                            <div class="portfolioStock-arrowDiv positive">
+                                                <div class="portfolioStock-arrow">
+                                                    <svg focusable="false" width="16" height="16"
+                                                        style="fill:currentColor;transform:rotate(0deg);" viewBox="0 0 24 24">
+                                                        <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="portfolioStock-middle">
+                                                <div class="portfolioStock-middleTitle">Russell</div>
+                                                <div class="portfolioStock-middlePrice">0.00</div>
+                                            </div>
+                                            <div class="portfolioStock-right positiveC">
+                                                <div class="portfolioStock-rightPercent">+0.00%</div>
+                                                <div class="portfolioStock-rightChange">+0.00</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="portfolioStockList">
+                                    <!-- Stocks -->
+                                    <div class="portfolioStockLeft">
+                                        <div class="portfolioStocks-header">Stocks</div>
+                                        <a class="portfolioStock-outerDiv" onclick="stockClick()">
+                                            <div class="portfolioStock" id="HMBL:OTCMKTS">
+                                                <div class="portfolioStock-arrowDiv positive">
+                                                    <div class="portfolioStock-arrow">
+                                                        <svg focusable="false" width="16" height="16"
+                                                            style="fill:currentColor;transform:rotate(0deg);" viewBox="0 0 24 24">
+                                                            <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="portfolioStock-middle">
+                                                    <div class="portfolioStock-middleTitle">HMBL</div>
+                                                    <div class="portfolioStock-middlePrice">0.00</div>
+                                                </div>
+                                                <div class="portfolioStock-right positiveC">
+                                                    <div class="portfolioStock-rightPercent">+0.00%</div>
+                                                    <div class="portfolioStock-rightChange">+0.00</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Portfolio -->
+                                    <div class="portfolioStockRight">
+                                        <div class="portfolioStocks-header">Portfolio</div>
+                                        <a class="portfolioStock-outerDiv">
+                                            <div class="portfolioStock" id="Portfolio">
+                                                <div class="portfolioStock-arrowDiv positive">
+                                                    <div class="portfolioStock-arrow">
+                                                        <svg focusable="false" width="16" height="16" style="fill:currentColor;"
+                                                            viewBox="0 0 24 24">
+                                                            <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="portfolioStock-middle">
+                                                    <div class="portfolioStock-middleTitle">Portfolio</div>
+                                                    <div class="portfolioStock-middlePrice">0.00</div>
+                                                </div>
+                                                <div class="portfolioStock-right">
+                                                    <div class="portfolioStock-rightPercent">+0.00%</div>
+                                                    <div class="portfolioStock-rightChange">+0.00</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="portfolioDiv" id="portfolioC2">
+                            <div class="stocks-graph-top">
+                                <div class="stocks-graph-header">
+                                    <a href="https://www.google.com/finance/quote/HMBL:OTCMKTS">
+                                        <div class="stocks-graph-title">Humbl Inc</div>
+                                        <div class="stocks-graph-price">$0.00</div>
+                                        <div class="stocks-graph-percent positive">+0.00%</div>
+                                        <div class="stocks-graph-change positiveC">+0.00</div>
+                                    </a>
+                                </div>
+                                <div class="stocks-graph-backBtnDiv">
+                                    <svg class="stocks-graph-backBtn" onClick="stockBackBtn()" width='53.7' height='53.7' viewBox='0 0 53.7 53.7'>
+                                        <circle cx="26.85" cy="26.85" r="20" stroke="#5f6368" stroke-width="1.5" fill="none" />
+                                        <path fill='#5f6368' stroke="#5f6368" stroke-width="0.5" d='M35.6 34.4L28 26.8l7.6-7.6c.2-.2.2-.5 0-.7l-.5-.5c-.2-.2-.5-.2-.7 0l-7.6 7.6-7.5-7.6c-.2-.2-.5-.2-.7 0l-.6.6c-.2.2-.2.5 0 .7l7.6 7.6-7.6 7.5c-.2.2-.2.5 0 .7l.5.5c.2.2.5.2.7 0l7.6-7.6 7.6 7.6c.2.2.5.2.7 0l.5-.5c.2-.2.2-.5 0-.7z' />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="stocks-graph">
+                                <div class="tradingview-widget-container">
+                                    <div id="tradingview_1234"></div>
+                                    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- News -->
+                    <div class="newsDiv" id="newsC">
+                        <a class="mainContainer-title" title="News" href="https://www.breitbart.com/">
+                            <span class="mainContainer-titleText">News</span>
+                        </a>
+                        <div class="newsWidget-outerDiv">
+                            <div class="newsWidget-leftArrow" id="newsWidget-leftArw">
+                                <svg class="newsWidget-arrow" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                </svg>
+                            </div>
+                            <div class="newsWidget-rightArrow" id="newsWidget-rightArw">
+                                <svg class="newsWidget-arrow" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </div>
+                            <div class="newsWidget-newsDiv">
+                                <div class="newsWidget-image"></div>
+                                <a class="newsWidget-textDiv" href="https://www.breitbart.com/">
+                                    <div class="newsWidget-title">Title</div>
+                                    <div class="newsWidget-text">Text</div>
+                                    <div class="newsWidget-date">Jan 1, 2021 12:00 AM</div>
+                                </a>
+                            </div>
+                            <div class="newsWidget-newsDiv">
+                                <div class="newsWidget-image"></div>
+                                <a class="newsWidget-textDiv" href="https://www.breitbart.com/">
+                                    <div class="newsWidget-title">Title</div>
+                                    <div class="newsWidget-text">Text</div>
+                                    <div class="newsWidget-date">Jan 1, 2021 12:00 AM</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="javascripts/navbar.js"></script>
+<script src="javascripts/searchbar.js"></script>
+<script src="javascripts/maincontainer.js"></script>
+<script src="javascripts/light.js"></script>
+<script src="javascripts/weather.js"></script>
+<script src="javascripts/finance.js"></script>
+<script src="javascripts/news.js"></script>

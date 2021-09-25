@@ -1,0 +1,280 @@
+/* Weather */
+.weatherWidget {
+    width: 90%;
+    margin: 0 auto;
+    height: 200px;
+    font-family: "Roboto", sans-serif;
+}
+.weatherWidget_topDiv {
+    width: 100%;
+    height: 50%;
+    column-count: 3;
+}
+.weatherWidget_topDiv:hover {
+    cursor: pointer;
+}
+.weatherWidget_location {
+    width: calc(100% - 15px);
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    margin-left: 15px;
+}
+.weatherWidget_locationText {
+    display: block;
+    line-height: 20px;
+    font-size: 18px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: 500;
+}
+.weatherWidget_currIcon {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+.weatherWidget_currIconImg {
+    width: 60px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.weatherWidget_topDiv_rightDiv {
+    width: calc(100% - 15px);
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.weatherWidget_topDiv_rightInnerDiv {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.weatherWidget_currTemp {
+    display: block;
+    font-size: 26px;
+}
+.weatherWidget_currDesc {
+    display: block;
+    font-size: 12px;
+    color: #202124;
+}
+.weatherWidget_bottomDiv {
+    width: 100%;
+    height: 50%;
+    column-count: 5;
+}
+.weatherWidget_dayDiv {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    color: #202124;
+    border-radius: 8px;
+}
+.weatherWidget_dayDiv:hover {
+    background-color: #f2f3f4;
+    cursor: pointer;
+}
+.weatherWidget_dayTextDiv {
+    padding-top: 5px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    color: inherit;
+}
+.weatherWidget_dayText {
+    display: block;
+    font-size: 13px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: inherit;
+}
+.weatherWidget_dayIcon {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+.weatherWidget_dayIconImg {
+    width: 35px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.weatherWidget_dayTemps {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    color: inherit;
+}
+.weatherWidget_dayTempsInnerDiv {
+    margin-top: auto;
+    margin-bottom: auto;
+    color: inherit;
+}
+.weatherWidget_dayHigh {
+    display: block;
+    font-size: 13px;
+    color: inherit;
+}
+.weatherWidget_dayLow {
+    display: block;
+    font-size: 13px;
+    color: inherit;
+}
+
+.weatherCon2-topBar {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    position: relative;
+}
+.weatherCon2-titleDiv {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    text-align: middle;
+    text-decoration: none;
+    color: #3c4043;
+}
+.weatherCon2-titleText {
+    display: block;
+    letter-spacing: .4px;
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.weatherCon2-backBtnDiv {
+    position: absolute;
+    right: 17px;
+    margin-top: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #3c4043;
+}
+.weatherCon2-backBtn {
+    color: #5f6368;
+    border-radius: 8px;
+    height: 35px;
+    width: 35px;
+}
+.weatherCon2-backBtn:hover {
+    background-color: #f2f3f4;
+}
+
+.weatherWidget2 {
+    width: 90%;
+    margin: 0 auto;
+    height: 200px;
+    font-family: "Roboto", sans-serif;
+}
+.weatherCon2-topDiv {
+    width: 100%;
+    height: 50%;
+    column-count: 2;
+    margin-bottom: 5px;
+}
+.weatherCon2-topDiv-leftDiv {
+    width: calc(100% - 15px);
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.weatherCon2-topDiv-leftInnerDiv {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.weatherCon2-currTemp {
+    display: block;
+    font-size: 26px;
+}
+.weatherCon2-currDesc {
+    display: block;
+    font-size: 12px;
+    color: #202124;
+}
+.weatherCon2-currIcon {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+.weatherCon2-currIconImg {
+    width: 60px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.weatherCon2-topDiv-rightDiv {
+    width: calc(100% - 15px);
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.weatherCon2-topDiv-rightInnerDiv {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.weatherCon2-currDescTitle {
+    display: block;
+    font-size: 26px;
+}
+
+.weatherCon2-bottomDiv {
+    width: 100%;
+    height: 50%;
+    column-count: 2;
+}
+.weatherCon2-bottomRow {
+    width: 90%;
+    position: relative;
+    display: block;
+    height: 30px;
+    margin: 0 auto;
+}
+.weatherCon2-bottomRow-left {
+    position: absolute;
+    left: 0;
+}
+.weatherCon2-bottomRow-right {
+    position: absolute;
+    right: 0;
+}
+.weatherCon2-bottomRow-icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+.weatherCon2-bottomRow-windIcon {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+}
+.weatherCon2-bottomRow-title {
+    padding-left: 30px;
+    display: inline-block;
+    line-height: 25px;
+}
+.weatherCon2-bottomRow-text {
+    display: inline-block;
+    line-height: 25px;
+}

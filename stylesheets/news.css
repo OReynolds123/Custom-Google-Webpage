@@ -1,0 +1,118 @@
+/* News */
+.newsWidget-outerDiv {
+    width: calc(100% - 30px);
+    height: 200px;
+    margin: 7px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.newsWidget-outerDiv:hover .newsWidget-leftArrow, .newsWidget-outerDiv:hover .newsWidget-rightArrow {
+    display: block;
+}
+.newsWidget-leftArrow, .newsWidget-rightArrow {
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 90;
+}
+.newsWidget-leftArrow {
+    left: 0;
+}
+.newsWidget-rightArrow {
+    right: 0;
+}
+.newsWidget-arrow {
+    width: 25px;
+    height: 25px;
+}
+.newsWidget-newsDiv {
+    margin: 0;
+    padding: 0;
+    clear: both;
+    width: 50%;
+    height: 100%;
+    background: black;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+}
+.newsWidget-image {
+    margin: 0;
+    padding: 0;
+    float: none;
+    transition: all 0.5s ease;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-image: url("../images/Breitbart_logo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.newsWidget-image:hover {
+    height: 110%;
+}
+.newsWidget-textDiv {
+    width: 100%;
+    height: 25%;
+    background: #ffffff80;
+    transition: height 0.5s, background-color 0.5s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-decoration: none;
+    font-family: Roboto,Arial,sans-serif;
+}
+.newsWidget-textDiv:hover {
+    cursor: pointer;
+    height: 100%;
+    background: #ffffffcc;
+}
+.newsWidget-textDiv:hover .newsWidget-title {
+    text-overflow: unset;
+    overflow: visible;
+    white-space: normal;
+    font-size: 12px;
+    line-height: 13px;
+}
+.newsWidget-textDiv:hover .newsWidget-text{
+    display: block;
+}
+.newsWidget-textDiv:hover .newsWidget-date{
+    font-size: 10px;
+    line-height: 11px;
+}
+.newsWidget-title, .newsWidget-text, .newsWidget-date {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.newsWidget-title {
+    margin-top: 5px;
+    color: #202124;
+    line-height: 20px;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 90%;
+    font-weight: 550;
+}
+.newsWidget-text {
+    display: none;
+    font-size: 11px;
+    line-height: 12px;
+    margin-top: 3px;
+}
+.newsWidget-date {
+    margin-top: 3px;
+    line-height: 14px;
+    font-size: 14px;
+}
